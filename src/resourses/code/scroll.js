@@ -6,6 +6,7 @@ export class ScrollHandeling {
     }
 
     null(){
+        //dud function to stop react spitting out an error
         return
     }
 }

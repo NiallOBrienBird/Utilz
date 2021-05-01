@@ -1,16 +1,15 @@
 import AppRouter from './components/AppRouter';
 import scroll from './resourses/code/scroll';
-import { useState } from 'react'
+import { useState } from 'react';
 
-scroll.null()
-
+scroll.null();
 
 function App() {
-  const [title, setTitle] = useState('Utility Select Menu<')
+  const [title, setTitle] = useState('Utility Select Menu')
 
   return (
     <div className="app" id="app">
-      <h1>Utility Select Menu</h1>
+      <h1>{title}</h1>
       <AppRouter/>
     </div>
   );

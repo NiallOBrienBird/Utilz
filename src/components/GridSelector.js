@@ -2,15 +2,12 @@ import GridItem from "./GridItem"
 import { useState } from 'react'
 
 
-export function GridSelector({ tiles }) {
+export function GridSelector({ tiles, hide }) {
     const [hidden, setHidden] = useState('')
 
-    function select(url) {
-        setHidden('hidden')
-        console.log(url)
-        setTimeout(() => window.location.assign(`${url}`), 600)
+    function select() {
+        setHidden("hidden")
     }
-    
 
     return(
     <div className={`grid-select ${hidden}`}>
