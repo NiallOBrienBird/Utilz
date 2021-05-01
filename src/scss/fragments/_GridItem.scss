@@ -1,0 +1,52 @@
+.item-container {
+    height: 150px;
+    //width: 90%;
+    //margin: 10px;
+
+    //max-width: 95%;
+    display:flex;
+    align-items: center;
+
+    padding: 20px;
+    border: 3px $dark solid;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.178);
+
+    transition: 200ms ease-in-out;
+
+    * {
+        user-select: none;
+    }
+
+    img {
+        height: 100px;
+        padding-right: 20px;
+    }
+
+    .text {
+        height:  100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        .title {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+
+        .description {
+            overflow: hidden;
+            max-height: 80%;
+        }
+    }
+}
+
+
+.item-container:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.774);
+    border: 3px $light solid;
+}
+
+

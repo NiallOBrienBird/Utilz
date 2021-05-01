@@ -1,0 +1,10 @@
+.app-container {
+    width: 95%;
+    height: 85%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $light;
+}

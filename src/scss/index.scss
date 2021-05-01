@@ -1,8 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
-@import './fragments/colors';
+@import './variables/_$colors';
+@import './fragments/GridItem', './fragments/GridSelector', './fragments/App';
 
 body {
+    margin: 0px;
+    height: 0px;
+
     font-family: 'Roboto', sans-serif;
-    background-color: $dark;
-    color: $light;
+    background-image: linear-gradient(80deg, $dark, $blue,);
+    color: $dark;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;;
 }
+
+.app {
+    height: 90vh;
+    width: 90vw;
+
+    background-color: $grey;
+    border-radius: 2px;
+
+
+    padding: 20px;
+    overflow-x: hidden;
+}
+
