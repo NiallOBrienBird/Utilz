@@ -71,12 +71,10 @@
   transition: 500ms ease-in;
   position: relative;
   right: 0vw;
-  opacity: 100%;
 }
 
 .hidden {
   right: 100vw;
-  opacity: 0%;
 }
 
 .app-container {

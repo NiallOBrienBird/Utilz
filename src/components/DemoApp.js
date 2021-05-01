@@ -1,7 +1,7 @@
 import React from 'react'
 import NavButton from './UI_Elements/NavButton'
 
-export const DemoApp = () => {
+export const DemoApp = () => {  
 
     return (
         <div className="app-container">
