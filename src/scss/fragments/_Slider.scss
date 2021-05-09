@@ -1,0 +1,52 @@
+.slider-holder {
+    .lable {
+        margin: 0;
+    }
+}
+
+.slider {
+    input:focus {
+        outline: none;
+    }
+
+    input {
+        overflow: hidden;
+        padding: 0;
+        height: 16px;
+        width: 100px;
+        -webkit-appearance: none;
+        background: $light;
+        border: 1px solid $dark;
+        outline: none;
+
+        border-radius: 100px;
+        overflow: hidden;
+
+
+        box-shadow: inset 0px 0px 1px 2px $dark;
+    }
+
+    input::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        position: relative;
+        top: 0px;
+
+        width: 16px;
+        height: 16px;
+        border-radius: 100%;
+        border: 1px solid $light;
+        background: $dark;
+        cursor: pointer;
+
+        box-shadow: -408px 0px 0px 400px $dark;
+    }
+
+    .value {
+        border: solid 2px $dark;
+        background-color: $light;
+        color: $blue;
+        padding: 3px 15px;
+        border-radius: 5px;
+        box-shadow: inset 0px 0px 5px  $dark;
+    }
+}
